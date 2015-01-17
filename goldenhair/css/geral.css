@@ -1,0 +1,547 @@
+body{
+	padding: 0;	
+	color: #fff;
+	background: #000 !important;	
+	font-family: "Open Sans", sans-serif;
+}
+
+.container{max-width: 1100px}
+
+/* .main {
+      float: left;
+      width: 100%;
+      margin: 0 auto;
+    }
+ */   
+
+ section {		
+	width: 100%;
+	min-width: 100%;	
+	padding-bottom: 25px;
+	margin-bottom: 25px;
+}
+
+#principal a{color: #d2b55b;}
+
+#principal h1{
+	color: #fff;
+	font-weight: 300;
+	letter-spacing: -1px;
+}
+#principal h2{
+	color: #fff;
+	font-weight: 300;	
+	letter-spacing: -1px;
+	font-size: 2.1em;
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 15px;
+	margin-bottom: 25px;
+	background: transparent url(../img/bg_titulos.jpg) bottom center no-repeat;
+}
+#principal h3{
+	color: #fff;
+	font-weight: 300;
+	letter-spacing: -1px;
+}
+#principal h4{color: #fff;}
+
+/* formularios */
+form input[type="text"],
+form textarea,
+form select,
+form .form-email,
+form input[type="password"]{
+	padding: 7px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #d1d1d1;	
+}
+form input[type="submit"]{	
+	background: #d2b55b;
+	font-weight: bold;
+	color: #fff;
+	border: none;
+	padding: 6px; 
+	float: left;
+	border-radius: 5px;
+}
+form input[type="submit"]:hover{
+	background: #d2b55b;	
+}
+
+
+/*--- TOPO ---------------------------------------------------------------------------------------------*/
+
+/*header{	
+	float: left;
+	width: 100%;
+	padding: 25px 0;
+	margin: 0;
+	border-bottom: 3px solid #9ac2f4;	
+}    
+
+header .navbar-collapse.collapse{
+	padding: 0;
+	margin: 0;
+}*/
+
+header{		
+	height: 650px;
+	margin-bottom: 0;
+	background: #000 url(../img/bg_topo_home.jpg) top center no-repeat;
+	position: relative;	
+}
+
+header h1.logo a{
+	width: 400px;
+	height: 135px;	
+	display: block;
+	text-indent: -5000em;
+	background: transparent url(../img/goldenhair.png) top center no-repeat;
+}
+
+#topnav{	
+	border: none;		
+	border-radius: 0;
+	background: #000;
+	border-bottom: 5px solid #d2b55b;
+}
+
+#menu-secoes{		
+	text-align: center;	
+	float: none;
+	border-top: none;	
+}
+
+#menu-secoes li{	
+	display: inline-block;
+	float: none;
+}
+
+#menu-secoes{			
+	text-align: center;
+	border: none;
+	z-index: 1;		
+	border-radius: 0;	
+}
+
+#menu-secoes a{
+	color: #fff;
+	text-transform: uppercase;	
+}
+
+#menu-secoes li.active a{background: #212121;}
+
+#menu-secoes a:hover,
+#menu-secoes li.active a:hover{background: #d2b55b;}
+
+
+
+/*.front #menu-secoes{
+	width: 20px;		
+	position: fixed;
+	top: 30%;
+	right: 20px;
+}
+
+.front #menu-secoes li{
+	text-indent: -5000em;
+	width: 20px;
+	height: 20px;	
+	overflow: hidden;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	background: #95bae3;
+	border: 1px solid #fff;
+}
+
+.front #menu-secoes li.active{
+	background: #bddcee;
+	border: 1px solid #95bae3;
+}*/
+
+
+
+/*--- TITULO PAGINAS ----------------------------------------------------------*/
+
+.titulo-pagina{		
+	float: left;
+	width: 100%;
+	color: #fff !important;	
+	padding-bottom: 20px;
+	padding: 30px 0 35px 0;
+	border-bottom: 2px solid #fff;		
+}
+
+.titulo-pagina h1{
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;	
+	font-weight: 800;	
+	font-size: 3em;
+}
+
+
+/*--- PRINCIPAL -------------------------------------------------------------------*/
+#principal{	
+	float: left;
+	width: 100%;			
+	position: relative;
+}
+
+#principal img.img-responsive{margin: auto;}
+
+
+/* animacoes */
+.delay4{
+	animation-delay: .4s;
+	-moz-animation-delay: .4s;
+	-webkit-animation-delay: .4s;
+	-o-animation-delay: .4s;
+	transition-delay: .4s;
+	-webkit-transition-delay: .4s;
+	-moz-transition-delay: .4s;
+	-o-transition-delay: .4s;
+}
+.delay6{
+	animation-delay: .6s;
+	-moz-animation-delay: .6s;
+	-webkit-animation-delay: .6s;
+	-o-animation-delay: .6s;
+	transition-delay: .6s;
+	-webkit-transition-delay: .6s;
+	-moz-transition-delay: .6s;
+	-o-transition-delay: .6s;
+}
+.delay8{
+	animation-delay: .8s;
+	-moz-animation-delay: .8s;
+	-webkit-animation-delay: .8s;
+	-o-animation-delay: .8s;
+	transition-delay: .8s;
+	-webkit-transition-delay: .8s;
+	-moz-transition-delay: .8s;
+	-o-transition-delay: .8s;
+}
+.delay10{
+	animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	transition-delay: 1s;
+	-webkit-transition-delay: 1s;
+	-moz-transition-delay: 1s;
+	-o-transition-delay: 1s;
+}
+.delay12{
+	animation-delay: 1.2s;
+	-moz-animation-delay: 1.2s;
+	-webkit-animation-delay: 1.2s;
+	-o-animation-delay: 1.2s;
+	transition-delay: 1.2s;
+	-webkit-transition-delay: 1.2s;
+	-moz-transition-delay: 1.2s;
+	-o-transition-delay: 1.2s;
+}
+
+/*--- BLOG -------------------------------------------------------------------------*/
+
+/*.page-blog .view-blog .views-row{
+	margin-bottom: 25px;		
+	padding: 15px 0;
+	border-radius: 5px;
+}
+
+.page-blog .view-blog .views-row:hover{		
+	background: #f2f7ff;
+}
+
+.page-blog .titulo-post{width: 100%;}
+.page-blog .titulo-post a{
+	font-size: 2.4em;	
+	font-family: 'Open Sans', sans-serif;	
+	font-weight: 800;	
+	letter-spacing: -1px;	
+}
+
+.page-blog .view-blog .data-post{
+	width: 100%;
+	padding-bottom: 10px;
+}
+.page-blog .view-blog .chamada-post{width: 100%;}*/
+
+
+
+/*--- LISTA DE NOTICIAS - GERAL ------------------------------------------------------------*/
+/*.page-noticias h1.title{
+	font-size: 42px;
+	line-height: 42px;
+	margin: 10px 0 25px 0;
+	padding-bottom: 10px;
+	letter-spacing: -1px;
+	font-weight: bold;
+	font-family: 'Scada', sans-serif;
+	font-weight: 400;
+	border-bottom:  1px dotted #ccc;
+}
+.page-noticias .conteudo .view-noticias-todas .row{margin-bottom: 25px;}
+.page-noticias .conteudo .view-noticias-todas .foto-noticia,
+.page-noticias .conteudo .view-noticias-todas .conteudo-noticia{padding: 0;}
+.page-noticias .conteudo .view-noticias-todas .titulo{
+	font-size: 21px;
+	line-height: 21px;
+	letter-spacing: -1px;	
+	margin-bottom: 10px;
+}
+.page-noticias .conteudo .view-noticias-todas .titulo a{
+	font-family: 'Scada', sans-serif;
+	font-weight: 400;
+}*/
+/*--- LISTA DE NOTICIAS POR CATEGORIA / TAG ------------------------------------------------------------*/
+/*.page-taxonomy h1.title{
+	font-size: 42px;
+	line-height: 42px;
+	margin: 10px 0 25px 0;
+	padding-bottom: 10px;
+	letter-spacing: -1px;
+	font-weight: bold;
+	font-family: 'Scada', sans-serif;
+	font-weight: 400;
+	border-bottom:  1px dotted #ccc;
+}
+.page-taxonomy .conteudo .view-noticias-categoria .row{margin-bottom: 25px;}
+.page-taxonomy .conteudo .view-noticias-categoria .foto-noticia,
+.page-taxonomy .conteudo .view-noticias-categoria .conteudo-noticia{padding: 0;}
+.page-taxonomy .conteudo .view-noticias-categoria .titulo{
+	font-size: 21px;
+	line-height: 21px;
+	letter-spacing: -1px;	
+	margin-bottom: 10px;
+}
+.page-taxonomy .conteudo .view-noticias-categoria .titulo a{
+	font-family: 'Scada', sans-serif;
+	font-weight: 400;
+}*/
+/*--- NOTICIA INDIVIDUAL -----------------------------------------------------------*/
+/*.node-type-article h1.title{display: none;}*/
+
+
+/************************************************************************************************************************/
+/*.node-type-article .view-topo-noticia .views-field-created,
+.node-type-article .view-topo-noticia .views-field-changed{	
+	font-size: 11px;
+}
+.node-type-article .view-topo-noticia .views-field-title{
+	font-size: 52px;
+	line-height: 52px;
+	margin: 5px 0;
+	letter-spacing: -2px;	
+	font-family: 'Open Sans', sans-serif;
+	color: #3a99d3;
+	font-weight: 800;	
+}
+.node-type-article .views-field-field-chamada{
+	color: #646464;
+	font-size: 21px;	
+	
+	border-bottom: 1px dotted #868686;
+	padding-bottom: 15px;
+	margin-bottom: 15px;		
+	letter-spacing: -1px;
+	line-height: 28px;
+}
+.node-type-article .views-field-nothing{
+	float: left;
+	width: 100%;	
+	margin-bottom: 25px;
+}
+.node-type-article .views-field-nothing .facebook,
+.node-type-article .views-field-nothing .twitter{	
+	float: left;
+	margin-right: 20px;
+}
+.node-type-article .view-tags-noticia{
+	text-transform: uppercase;
+	margin: 25px 0;
+	padding: 10px 0;
+	border-top: 1px dotted #ccc;
+}
+.node-type-article .pane-autor-noticia{
+	float: left;
+	width: 100%;
+}
+.node-type-article .view-autor-noticia{
+	background: #f5f8ff;	
+	float: left;
+	width: 100%;
+	margin-bottom: 25px;
+	border-radius: 5px;
+	padding: 15px;
+	border-bottom: 2px solid #3a99d3;
+}
+.node-type-article .view-autor-noticia .foto{padding: 0;}
+.node-type-article .view-autor-noticia .nome{
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+}
+.node-type-article .view-autor-noticia .nome strong{
+	font-size: 28px;
+	font-weight: bold;	
+	letter-spacing: -1px;	
+}
+.node-type-article .view-autor-noticia .sobre{
+	margin-bottom: 15px;
+	width: 100%;
+	float: left;
+	margin-top: 10px;
+}
+.node-type-article .view-autor-noticia .facebook a,
+.node-type-article .view-autor-noticia .twitter a,
+.node-type-article .view-autor-noticia .soundcloud a{
+	text-indent: -5000em;	
+	width: 26px;
+	height: 26px;
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+	.node-type-article .view-autor-noticia .facebook a{background: transparent url(../img/social_icons.png) 0 0 no-repeat;}
+	.node-type-article .view-autor-noticia .twitter a{background: transparent url(../img/social_icons.png) -30px 0 no-repeat;}
+	.node-type-article .view-autor-noticia .soundcloud a{background: transparent url(../img/social_icons.png) -89px 0 no-repeat;}
+*/
+/*--- CONTATO --------------------------------------------------------------------------------------*/
+
+body.contato #principal .panel-col-center{text-align: center;}
+body.contato #principal form input[type="text"],
+body.contato #principal form input[type="email"]{width: 100%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* comentarios */
+/*.node-type-article .pane-comentarios-noticia{
+	float: left;
+	width: 100%;
+	margin-top: 25px;	
+}
+.node-type-article .pane-comentarios-noticia h2{
+	font-size: 32px;
+	line-height: 42px;
+	margin: 0 0 15px 0;
+	padding-bottom: 10px;
+	letter-spacing: -1px;
+	font-weight: bold;
+	font-family: 'Scada', sans-serif;
+	font-weight: 400;	
+}*/
+
+/*--- RESULTADOS DA BUSCA e BUSCA 404 --------------------------------------------------------------*/
+/*.page-search h1.title{display: none;}	
+.page-search404 h1.title{
+	font-size: 18px; 
+	font-weight: bold;
+	background: #f5f5f5;
+	padding: 10px;
+}
+.page-search h2,
+.page-search404 h2{
+	font-size: 42px;
+	line-height: 42px;
+	margin: 10px 0 25px 0;
+	padding-bottom: 10px;
+	letter-spacing: -1px;
+	font-weight: bold;
+	font-family: 'Scada', sans-serif;
+	font-weight: 400;	
+}
+.page-search h3.title a,
+.page-search404 h3.title a{
+	font-size: 21px;
+	line-height: 24px;
+	letter-spacing: -1px;	
+	font-family: 'Scada', sans-serif;
+	font-weight: 400;
+}	
+.page-search ol,
+.page-search404 ol{
+	padding: 0;
+	margin: 0;
+}
+.page-search ol li,
+.page-search404 ol li{
+	border-bottom: 1px dotted #666;
+}*/
+/*--- SIDEBAR ----------------------------------------------------------------------*/
+
+/*#sidebar .block{
+	background: #f5f8ff;	
+	float: left;
+	width: 100%;
+	margin-bottom: 25px;
+	border-radius: 5px;
+	padding: 15px;
+	border-bottom: 2px solid #3a99d3;
+}
+#sidebar .block h2{
+	font-size: 21px;
+	letter-spacing: -1px;
+	font-weight: normal;	
+	margin: 0 0 20px 0;
+	color: #3a99d3;
+}
+/* busca */
+/*#sidebar .block-custom-search-blocks *{margin: 0;}
+#sidebar .custom-search-box{	
+	padding: 5px;
+	width: 68%;
+	float: left;
+	margin-right: 5px;
+	color: #222;	
+}
+
+#sidebar .view-categorias a{	
+	font-weight: bold;	
+	width: 100%;
+	padding: 2% 0 2% 0;	
+	display: block;	
+	border-bottom: 1px dotted #3a99d3;
+}
+*/
+
+/* facebook */
+/*#sidebar #block-block-3{
+	padding: 0;
+	background: #fff;
+	border-bottom: none;
+}*/
+
+/*--- RODAPE -------------------------------------------------------------------*/
+footer{	
+	border-top: 1px solid #ccc;
+	float: left;
+	width: 100%;
+	margin-top: 25px;	
+	padding-top: 20px;	
+}
+footer a{font-weight: bold;	}
+
+
+
+
+/***************************************************************************************************/
+@media (min-width: 768px){	
+	.page-home .principal .conteudo .view-noticia-home2 .views-row{	min-height: 285px;}
+}
