@@ -4,40 +4,49 @@
 .front .container{overflow: hidden;}
 
 
+/*--- TOPO -----------------------------------------------------------------------------------------------*/
+.front header{
+    height: 650px;
+    background: #000 url(../img/bg_topo_home.jpg) top center no-repeat;	
+}
+
+.front header h1.logo a{float: left;}
+
 /*--- BLOCO 1 ---------------------------------------------------------------------------------------------*/
 .front #Section-1{	
-	margin: 50px 0 100px 0;	
+	/*margin: 50px 0 100px 0;*/	
+    position: relative;
+}
+.servicos-geral{padding: 50px 0;}
+
+.servicos-geral .icon-para-elas,
+.servicos-geral .icon-para-eles{	
+    float: left;
+    width: 100%;    
+	overflow: hidden;	
+    padding: 0;    
+    margin: auto;    
+    position: relative;
+    cursor: pointer;
 }
 
-.front #Section-1 .para-elas,
-.front #Section-1 .para-eles{	
-	border: 5px solid #d8b45c;
-	overflow: hidden;
-	width: 425px;
-    height: 425px;    
-    padding: 0;
-    -moz-border-radius: 100%; 
-    -webkit-border-radius: 100%; 
-    border-radius: 100%;   
-    margin: auto;
-}
+.servicos-geral .icon-para-elas a,
+.servicos-geral .icon-para-eles a{color: #fff !important}
 
-.front #Section-1 .para-elas img,
-.front #Section-1 .para-eles img{
+.servicos-geral .icon-para-elas img,
+.servicos-geral .icon-para-eles img{
 	opacity: .4;
 	transition: .5s; 
 	-webkit-transition: .5s;
 }
+    .servicos-geral .icon-para-elas:hover img,
+    .servicos-geral .icon-para-eles:hover img{opacity: .9;}
 
-.front #Section-1 .para-elas:hover img,
-.front #Section-1 .para-eles:hover img{opacity: .8;}
-
-.front #Section-1 .para-elas a,
-.front #Section-1 .para-eles a{
-	width: 100%;
+.servicos-geral .icon-para-elas h3,
+.servicos-geral .icon-para-eles h3{	
 	height: 100%;	
 	text-align: center;
-	display: block;	
+	display: block !important;	
 	font-size: 2.1em;
 	font-weight: 800;
 	color: #fff;
@@ -45,18 +54,68 @@
 	position: absolute;
 	top: 0;
 	left: 0;	
-	padding: 35% 0;
-	letter-spacing: -1px;	
+	padding: 30% 0;
+	letter-spacing: -1px;	    
+    width: 100% !important;
 }
 
-.front #Section-1 .para-elas a:hover,
-.front #Section-1 .para-eles a:hover{text-decoration: none;}
+.servicos-geral .icon-para-elas h3:hover,
+.servicos-geral .icon-para-eles h3:hover{text-decoration: none;}
 
-.front #Section-1 .para-elas a strong,
-.front #Section-1 .para-eles a strong{	
+.servicos-geral .icon-para-elas h3 strong,
+.servicos-geral .icon-para-eles h3 strong{	
 	padding-bottom: 7px;
 	background: transparent url(../img/bg_titulos.jpg) bottom center no-repeat;
 }
+
+/* servicos feminino */
+#servicos-feminino{    
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .95; 
+    display: none;
+    transition: .5s;
+    text-align: center;
+    color: #fff;
+    padding: 0 0 100px 0;
+}
+#servicos-feminino .voltar{
+    cursor: pointer;
+    margin: 25px 0;
+    width: 100%;
+    font-weight: bold;
+}
+#servicos-feminino .row>div{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+#servicos-feminino .icon{opacity: 1;}
+
+#servicos-feminino .icon a h4{
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#servicos-feminino .icon a:hover h4{color: #d2b55b;}
+
+#servicos-feminino .icon a:hover{text-decoration: none;}
+
+/*.front #servicos-feminino h3 a{	
+	font-size: 2.1em;
+	font-weight: 800;
+	color: #fff;
+	text-transform: uppercase;				
+	letter-spacing: -1px;	        
+    padding-bottom: 7px;
+	background: transparent url(../img/bg_titulos.jpg) bottom center no-repeat;
+}*/
+
 
 
 
@@ -129,7 +188,7 @@
 /*--- BLOCO 4 ---------------------------------------------------------------------------------------------*/
 .front #Section-4{	
 	background: transparent url(../img/fachada.jpg) top center no-repeat;
-	background-width: 100%;
+	/*background-width: 100%;*/
 	min-height: 580px;	
 } 
 
@@ -137,7 +196,7 @@
 /*--- BLOCO 5 ---------------------------------------------------------------------------------------------*/
 .front #Section-5 {
 	color: #f5f5f5;
-	padding: 100px;
+	padding: 100px 0;
 }
 .front #Section-5 h2{
 	font-size: 1.4em;

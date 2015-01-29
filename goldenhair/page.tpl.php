@@ -1,56 +1,42 @@
-<header>
-	<div class="container">
+<!-- HEADER --> 
+ <header>  
+    <div class="container">
+        <h1 class="logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">Golden Hair</a></h1>
+    </div>
+	</header>
+<!-- / HEADER -->
 
-		<div class="wrapper">
 
-			<div class="sidebar col-sm-4 col-lg-4">
-				<div class="logo">
-					<a class="brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-						<img class="img-responsive" src="<?php print base_path() . path_to_theme() .'/' ?>/img/famacor.png" alt="logo" />
-					</a>
-				</div><!-- logo -->
-			</div>
+<nav id="topnav" class="navbar navbar-default" role="navigation">
+    <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>   
+    </div> 
 
-			<div class="sidebar col-sm-8 col-lg-8">							
-				<?php print render($page['header']); ?>				
-				<!--div class="menu-social-media">
-					<ul>
-						<li class="facebook"><a href="https://www.facebook.com/detroit.brasil" target="_blank">Facebook</a></li>
-						<li class="rss"><a href="http://www.detroitbr.org/feed/rss" target="_blank">RSS</a></li>
-					</ul>
-				</div-->				
+    <div class="collapse navbar-collapse navbar-ex1-collapse">   
+       <div class="menu-secoes">
+       <ul id="menu-secoes" class="nav navbar-nav">
+            <li class="active"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">Home</a></li>
+            <li><a href="<?php print $front_page; ?>#Section-1">Serviços</a></li>
+            <li><a href="<?php print $front_page; ?>#Section-2">Novidades</a></li> 
+            <li><a href="<?php print $front_page; ?>#Section-3">Produtos</a></li>             
+           <li><a href="<?php print $front_page; ?>trabalhe-conosco">Trabalhe Conosco</a></li>             
+            <li><a href="<?php print $front_page; ?>#Section-5">Contato</a></li> 
+            <li class="facebook"><a href="https://www.facebook.com/pages/Golden-Hair/1440308909590166?fref=ts" target="_blank">Facebook</a></li> 
+            <li class="instagram"><a href="#">Instagram</a></li> 
+          </ul>  
+      </div>
+   </div><!-- /.navbar-collapse --> 
 
-				<!-- Static navbar -->
-			      <div class="navbar navbar-default menu-principal" role="navigation">
-			        
-			          <div class="navbar-header">
-			            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-			              <span class="sr-only">Toggle navigation</span>
-			              <span class="icon-bar"></span>
-			              <span class="icon-bar"></span>
-			              <span class="icon-bar"></span>
-			            </button>            
-			          </div>
-			          <div class="navbar-collapse collapse">
-			            <ul class="nav navbar-nav">
-			               <li class="active"><a href="#topo">Home</a></li>
-				            <li><a data-toggle="pill" href="#Section-1">Serviços</a></li>
-				            <li><a data-toggle="pill" href="#Section-2">Novidades</a></li> 
-				            <li><a data-toggle="pill" href="#Section-3">Produtos</a></li>             
-				            <li><a data-toggle="pill" href="#Section-5">Contato</a></li> 
-				            <li class="facebook"><a href="#">Facebook</a></li> 
-				            <li class="instagram"><a href="#">Instagram</a></li> 
-			            </ul>            
-			          </div><!--/.nav-collapse -->        			          
-			      </div> 
+  </div>  
+</nav>
 
-			</div><!-- conteudo header -->
-
-		</div>
-					
-	</div>      
-
-</header><!-- PAGE-HEADER-->
 
 <?php if (($title)&&(!$is_front)): ?>
 		<div class="titulo-pagina">
@@ -68,7 +54,7 @@
 		
 		<div class="row">
 
-			<div id="conteudo" class="col-sm-9">								
+			<div id="conteudo" class="col-sm-12">								
 				 <?php if ($messages): ?>
 		          <div id="messages">
 		          	<div class="section clearfix">
@@ -84,10 +70,7 @@
 		          <?php print render($page['content']); ?>		      	
 	        </div> <!-- conteudo -->
 
-			<div id="sidebar" class="col-sm-3">				
-				<?php print render($page['sidebar']); ?>
-			</div><!-- sidebar -->
-
+			
 		</div>	   
 	</div><!-- container -->
 </section><!-- principal -->
@@ -106,7 +89,7 @@
 </footer>
 </div>	 
  
-</div> <!-- /container -->
+
 <!--/ CONTENT -->
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="<?php print base_path() . path_to_theme() .'/' ?>/js/bootstrap.js" type="text/javascript"></script>

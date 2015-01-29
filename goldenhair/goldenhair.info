@@ -12,6 +12,7 @@ regions[footer] = Footer
 stylesheets[all][] = css/bootstrap.css
 stylesheets[all][] = css/bootstrap-theme.css
 stylesheets[all][] = css/geral.css
+stylesheets[all][] = css/home.css
 
 plugins[panels][layouts] = layouts
 

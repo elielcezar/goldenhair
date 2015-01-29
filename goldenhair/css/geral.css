@@ -1,9 +1,14 @@
+html{height:100%;}
+
 body{
+    height: 100%;
 	padding: 0;	
 	color: #fff;
-	background: #000 !important;	
+	background: #111 !important;	
 	font-family: "Open Sans", sans-serif;
 }
+
+a{outline: 0 !important;}
 
 .container{max-width: 1100px}
 
@@ -25,12 +30,13 @@ body{
 
 #principal h1{
 	color: #fff;
-	font-weight: 300;
+	font-weight: 700;
 	letter-spacing: -1px;
+    font-family: "Open Sans", sans-serif;
 }
 #principal h2{
 	color: #fff;
-	font-weight: 300;	
+	font-weight: 700;	
 	letter-spacing: -1px;
 	font-size: 2.1em;
 	text-transform: uppercase;
@@ -38,11 +44,13 @@ body{
 	padding-bottom: 15px;
 	margin-bottom: 25px;
 	background: transparent url(../img/bg_titulos.jpg) bottom center no-repeat;
+    font-family: "Open Sans", sans-serif;
 }
 #principal h3{
 	color: #fff;
 	font-weight: 300;
 	letter-spacing: -1px;
+    font-family: "Open Sans", sans-serif;
 }
 #principal h4{color: #fff;}
 
@@ -74,23 +82,8 @@ form input[type="submit"]:hover{
 
 /*--- TOPO ---------------------------------------------------------------------------------------------*/
 
-/*header{	
-	float: left;
-	width: 100%;
-	padding: 25px 0;
-	margin: 0;
-	border-bottom: 3px solid #9ac2f4;	
-}    
-
-header .navbar-collapse.collapse{
-	padding: 0;
-	margin: 0;
-}*/
-
-header{		
-	height: 650px;
-	margin-bottom: 0;
-	background: #000 url(../img/bg_topo_home.jpg) top center no-repeat;
+header{			
+	margin-bottom: 0;	
 	position: relative;	
 }
 
@@ -99,6 +92,7 @@ header h1.logo a{
 	height: 135px;	
 	display: block;
 	text-indent: -5000em;
+    margin: auto;
 	background: transparent url(../img/goldenhair.png) top center no-repeat;
 }
 
@@ -113,18 +107,13 @@ header h1.logo a{
 	text-align: center;	
 	float: none;
 	border-top: none;	
+    z-index: 1;		
+	border-radius: 0;	
 }
 
 #menu-secoes li{	
 	display: inline-block;
 	float: none;
-}
-
-#menu-secoes{			
-	text-align: center;
-	border: none;
-	z-index: 1;		
-	border-radius: 0;	
 }
 
 #menu-secoes a{
@@ -137,6 +126,39 @@ header h1.logo a{
 #menu-secoes a:hover,
 #menu-secoes li.active a:hover{background: #d2b55b;}
 
+#menu-secoes li.facebook a{    
+    text-indent: -5000em;
+    width: 50px;
+    height: 50px;
+    background: transparent url(../img/social_icons.png) -2px 0 no-repeat;
+}
+    #menu-secoes li.facebook a:hover{background: #d2b55b url(../img/social_icons.png) -2px -44px no-repeat;}
+
+#menu-secoes li.instagram a{    
+    text-indent: -5000em;
+    width: 50px;
+    height: 50px;
+    background: transparent url(../img/social_icons.png) -54px 0 no-repeat;
+}
+    #menu-secoes li.instagram:hover a{background: #d2b55b url(../img/social_icons.png) -54px -44px no-repeat;}
+
+
+
+
+/* submenu */
+/*ul.nav li.dropdown:hover > ul.dropdown-menu {display: block;}
+header .navbar ul li ul{	
+	padding: 0;	
+	background: #282828;
+}
+header .navbar ul li ul li{
+	min-width: 200px;
+	list-style-image: none;
+	list-style-type: none;
+}
+header .navbar ul li ul li.active a{background-color: #e7511e !important;}
+
+header .navbar ul li ul li a:hover{background-color: #000 !important;}*/
 
 
 /*.front #menu-secoes{
@@ -166,21 +188,25 @@ header h1.logo a{
 
 /*--- TITULO PAGINAS ----------------------------------------------------------*/
 
-.titulo-pagina{		
+#page-title{		
 	float: left;
-	width: 100%;
-	color: #fff !important;	
-	padding-bottom: 20px;
-	padding: 30px 0 35px 0;
-	border-bottom: 2px solid #fff;		
+	width: 100%;		
+    /*color: #fff;
+	font-family: 'Open Sans', sans-serif;*/	
+	font-weight: 700;	
+	font-size: 3em;
+    padding-bottom: 7px;
+    text-align: center;        
+	background: transparent url(../img/bg_titulos.jpg) bottom center no-repeat !important;
+    
+    
 }
 
-.titulo-pagina h1{
-	color: #fff;
-	font-family: 'Open Sans', sans-serif;	
-	font-weight: 800;	
-	font-size: 3em;
-}
+/*
+
+#page-title h1{
+	
+}*/
 
 
 /*--- PRINCIPAL -------------------------------------------------------------------*/
@@ -243,6 +269,24 @@ header h1.logo a{
 	-webkit-transition-delay: 1.2s;
 	-moz-transition-delay: 1.2s;
 	-o-transition-delay: 1.2s;
+}
+
+/*--- SERVICOS ----------------------------------------------------------------------*/
+/*.node-type-servico #conteudo .pane-node-title{
+    float: left;
+    width: 100%;
+    margin-bottom: 25px;
+}*/
+.node-type-servico #conteudo h1{
+    text-align: center;
+    color: #fff;
+	font-family: 'Open Sans', sans-serif;	
+	font-weight: 700;	
+	font-size: 2.6em;
+    padding-bottom: 7px;    
+    margin: 0 0 25px 0;
+    text-transform: uppercase;
+	background: transparent url(../img/bg_titulos.jpg) bottom center no-repeat;
 }
 
 /*--- BLOG -------------------------------------------------------------------------*/

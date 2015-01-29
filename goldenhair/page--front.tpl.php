@@ -2,7 +2,7 @@
 <!-- HEADER --> 
  <header>  
     <div class="container">
-        <h1 class="logo"><a href="#">Golden Hair</a></h1>
+        <h1 class="logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">Golden Hair</a></h1>
     </div>
 	</header>
 <!-- / HEADER -->
@@ -27,8 +27,9 @@
             <li><a data-toggle="pill" href="#Section-1">Serviços</a></li>
             <li><a data-toggle="pill" href="#Section-2">Novidades</a></li> 
             <li><a data-toggle="pill" href="#Section-3">Produtos</a></li>             
+           <li><a data-toggle="pill" href="<?php print $front_page; ?>trabalhe-conosco">Trabalhe Conosco</a></li>             
             <li><a data-toggle="pill" href="#Section-5">Contato</a></li> 
-            <li class="facebook"><a href="#">Facebook</a></li> 
+            <li class="facebook"><a href="https://www.facebook.com/pages/Golden-Hair/1440308909590166?fref=ts" target="_blank">Facebook</a></li> 
             <li class="instagram"><a href="#">Instagram</a></li> 
           </ul>  
       </div>
@@ -45,26 +46,87 @@
 
     <h2>Serviços</h2>
 
-    <div class="row">
-
-      <div class="col-sm-6">
-        <div class="para-elas">
-          <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/bg_elas.png" class="img-responsive" />
-          <a href="#"><strong>Para Elas</strong></a>
+    <div class="servicos-geral">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="icon-para-elas">
+              <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/bg_elas.png" class="img-responsive" />
+              <h3><strong>Para Elas</strong></h3>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="icon-para-eles">
+            <a href="http://ecwd.net/goldenhair2/para-eles">
+              <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/bg_eles.png" class="img-responsive" />
+              <h3><strong>Para Eles</strong></h3>
+            </a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="para-eles">
-          <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/bg_eles.png" class="img-responsive" />
-          <a href="#"><strong>Para Eles</strong></a>
-        </div>
-      </div>
-
     </div>
-     
-  
-	
-	
+        
+            <div id="servicos-feminino" class="servico-especifico">
+                <div class="container">
+                <div class="voltar"><a>X | Voltar</a></div>                    
+                <div class="row">                     
+                    <div class="col-sm-4">
+                    <div class="icon">
+                        <a href="<?php print $front_page; ?>cabelo">
+                        <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/bg_cabelo2.png" class="img-responsive" />
+                        <h4>Cabelo</h4>                        
+                        </a>    
+                    </div>
+                  </div>
+                    <div class="col-sm-4">
+                    <div class="icon">
+                        <a href="<?php print $front_page; ?>est%C3%A9tica">
+                            <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/bg_estetica2.png" class="img-responsive" />
+                            <h4>Estética</h4>                        
+                        </a>
+                    </div>
+                  </div>
+                     <div class="col-sm-4">
+                    <div class="icon">                        
+                        <a href="<?php print $front_page; ?>maquiagem">
+                            <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/bg_maquiagem2.png" class="img-responsive" />
+                            <h4>Maquiagem</h4>                        
+                        </a>
+                    </div>
+                  </div>                
+                </div>
+                
+                <div class="row">          
+                  <div class="col-sm-4">
+                    <div class="icon">
+                        <a href="<?php print $front_page; ?>podologia">
+                            <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/bg_podologia2.png" class="img-responsive" />
+                            <h4>Podologia</h4>                        
+                        </a>
+                    </div>
+                  </div>
+                    <div class="col-sm-4">
+                    <div class="icon">
+                        <a href="<?php print $front_page; ?>manicurepedicure">
+                            <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/bg_manicure2.png" class="img-responsive" />
+                            <h4>Manicure / Pedicure</h4>    
+                        </a>
+                    </div>
+                  </div>
+                    <div class="col-sm-4">
+                    <div class="icon">
+                        <a href="<?php print $front_page; ?>depila%C3%A7%C3%A3o">
+                            <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/bg_depilacao2.png" class="img-responsive" />
+                            <h4>Depilação</h4>                        
+                        </a>
+                    </div>
+                  </div>                    
+                    
+                </div>
+                </div>    
+            </div>
+    
+        
+    
 	</div><!-- / CONTAINER-->
 </section>
 
@@ -174,10 +236,13 @@
 
  
  </div>
-
-
-
 <!-- / FOOTER -->
+
+
+
+
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="<?php print base_path() . path_to_theme() .'/' ?>/js/bootstrap.js" type="text/javascript"></script>
 <script src="<?php print base_path() . path_to_theme() .'/' ?>/js/jquery.nicescroll.min.js" type="text/javascript" ></script>

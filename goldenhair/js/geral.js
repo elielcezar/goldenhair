@@ -1,9 +1,19 @@
 (function($) {
 
    $().ready(function() { 
+       
+    
+    /*-- servicos home --------------------------------------------------*/    
+    $('.icon-para-elas').click(function(){        
+        $('#servicos-feminino').fadeIn('slow'); 
+    });
+    $('.voltar').click(function(){
+        $('.servico-especifico').fadeOut();        
+    });
 
-   	/*-- novidades home -----------------------------------------------*/
-
+   	
+       
+    /*-- novidades home -----------------------------------------------*/
    	$('.front #carousel-novidades .item').unwrap();
 	$('.front #carousel-novidades .item-1').addClass('active');
 			

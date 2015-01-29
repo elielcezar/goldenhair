@@ -7,18 +7,13 @@
 <?php if ($is_front):  ?>	
 <?php endif; ?>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<?php print $styles; ?>
 <?php print $scripts; ?>
 <link href="<?php print base_path() . path_to_theme() .'/' ?>/css/bootstrap-theme.min.css" rel="stylesheet">
-
 <link href="<?php print base_path() . path_to_theme() .'/' ?>/css/bootstrap.min.css" rel="stylesheet">
-
 <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
-
-<link href="<?php print base_path() . path_to_theme() .'/' ?>/css/home.css" rel="stylesheet">
-
 <link href="<?php print base_path() . path_to_theme() .'/' ?>/css/animate.css" rel="stylesheet">
-
+<?php print $styles; ?>
+        
 
 <!--[if lt IE 7]>
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome-ie7.min.css" rel="stylesheet">
@@ -35,7 +30,6 @@
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,800,600,700,300' rel='stylesheet' type='text/css'>
 <!-- /GOOGLE FONT-->
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
 
 
 </head>
