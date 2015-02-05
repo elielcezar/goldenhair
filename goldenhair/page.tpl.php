@@ -22,12 +22,13 @@
     <div class="collapse navbar-collapse navbar-ex1-collapse">   
        <div class="menu-secoes">
        <ul id="menu-secoes" class="nav navbar-nav">
-            <li class="active"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">Home</a></li>
-            <li><a href="<?php print $front_page; ?>#Section-1">Serviços</a></li>
-            <li><a href="<?php print $front_page; ?>#Section-2">Novidades</a></li> 
-            <li><a href="<?php print $front_page; ?>#Section-3">Produtos</a></li>             
+            <li class="active"><a href="#topo">Home</a></li>
+            <li><a data-toggle="pill" href="#missao">O Salão</a></li>
+            <li><a data-toggle="pill" href="#servicos">Serviços</a></li>
+            <li><a data-toggle="pill" href="#novidades">Novidades</a></li> 
+            <li><a data-toggle="pill" href="#produtos">Produtos</a></li>             
            <li><a href="<?php print $front_page; ?>trabalhe-conosco">Trabalhe Conosco</a></li>             
-            <li><a href="<?php print $front_page; ?>#Section-5">Contato</a></li> 
+            <li><a data-toggle="pill" href="#contato">Contato</a></li> 
             <li class="facebook"><a href="https://www.facebook.com/pages/Golden-Hair/1440308909590166?fref=ts" target="_blank">Facebook</a></li> 
             <li class="instagram"><a href="#">Instagram</a></li> 
           </ul>  
@@ -41,7 +42,7 @@
 <?php if (($title)&&(!$is_front)): ?>
 		<div class="titulo-pagina">
 			<div class="container">
-				<div id="conteudo" class="col-sm-12">
+				<div class="col-sm-12">
 					<h1 class="title" id="page-title"><?php print $title; ?></h1>          
           		</div>
           	</div>

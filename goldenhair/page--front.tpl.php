@@ -3,6 +3,7 @@
  <header>  
     <div class="container">
         <h1 class="logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">Golden Hair</a></h1>
+        <div class="telefone">41 3013-1414</div>
     </div>
 	</header>
 <!-- / HEADER -->
@@ -24,11 +25,12 @@
        <div class="menu-secoes">
        <ul id="menu-secoes" class="nav navbar-nav">
             <li class="active"><a href="#topo">Home</a></li>
-            <li><a data-toggle="pill" href="#Section-1">Serviços</a></li>
-            <li><a data-toggle="pill" href="#Section-2">Novidades</a></li> 
-            <li><a data-toggle="pill" href="#Section-3">Produtos</a></li>             
-           <li><a data-toggle="pill" href="<?php print $front_page; ?>trabalhe-conosco">Trabalhe Conosco</a></li>             
-            <li><a data-toggle="pill" href="#Section-5">Contato</a></li> 
+            <li><a data-toggle="pill" href="#missao">O Salão</a></li>
+            <li><a data-toggle="pill" href="#servicos">Serviços</a></li>
+            <li><a data-toggle="pill" href="#novidades">Novidades</a></li> 
+            <li><a data-toggle="pill" href="#produtos">Produtos</a></li>             
+           <li><a href="<?php print $front_page; ?>trabalhe-conosco">Trabalhe Conosco</a></li>             
+            <li><a data-toggle="pill" href="#contato">Contato</a></li> 
             <li class="facebook"><a href="https://www.facebook.com/pages/Golden-Hair/1440308909590166?fref=ts" target="_blank">Facebook</a></li> 
             <li class="instagram"><a href="#">Instagram</a></li> 
           </ul>  
@@ -40,8 +42,15 @@
 
  <div id="principal">
 
+<section id="missao">
+  <div class="container">   
+    <p>O Golden Hair Cabeleireiros e Estética tem como missão transformar o sonho da mulher em realidade, deixando-a mais linda, satisfeita, contente e com sua auto-estima elevada.</p>
+    <p>Nós amamos o que fazemos!</p>
+</div>
+</section>
+
 <!--  SECTION-1 -->  
-<section id="Section-1">
+<section id="servicos">
 	<div class="container"> 	
 
     <h2>Serviços</h2>
@@ -50,14 +59,14 @@
         <div class="row">
           <div class="col-sm-6">
             <div class="icon-para-elas">
-              <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/bg_elas.png" class="img-responsive" />
+              <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/bg_elas.png" alt="para elas" class="img-responsive" />
               <h3><strong>Para Elas</strong></h3>
             </div>
           </div>
           <div class="col-sm-6">
             <div class="icon-para-eles">
             <a href="http://ecwd.net/goldenhair2/para-eles">
-              <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/bg_eles.png" class="img-responsive" />
+              <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/bg_eles.png" alt="para eles" class="img-responsive" />
               <h3><strong>Para Eles</strong></h3>
             </a>
             </div>
@@ -65,14 +74,14 @@
         </div>
     </div>
         
-            <div id="servicos-feminino" class="servico-especifico">
+            <div id="servicos-feminino" class="animated servico-especifico">
                 <div class="container">
                 <div class="voltar"><a>X | Voltar</a></div>                    
                 <div class="row">                     
                     <div class="col-sm-4">
                     <div class="icon">
                         <a href="<?php print $front_page; ?>cabelo">
-                        <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/bg_cabelo2.png" class="img-responsive" />
+                        <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/bg_cabelo2.png" alt="cabelo" class="img-responsive" />
                         <h4>Cabelo</h4>                        
                         </a>    
                     </div>
@@ -80,7 +89,7 @@
                     <div class="col-sm-4">
                     <div class="icon">
                         <a href="<?php print $front_page; ?>est%C3%A9tica">
-                            <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/bg_estetica2.png" class="img-responsive" />
+                            <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/bg_estetica2.png" alt="estetica" class="img-responsive" />
                             <h4>Estética</h4>                        
                         </a>
                     </div>
@@ -88,7 +97,7 @@
                      <div class="col-sm-4">
                     <div class="icon">                        
                         <a href="<?php print $front_page; ?>maquiagem">
-                            <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/bg_maquiagem2.png" class="img-responsive" />
+                            <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/bg_maquiagem2.png" alt="maquiagem" class="img-responsive" />
                             <h4>Maquiagem</h4>                        
                         </a>
                     </div>
@@ -99,7 +108,7 @@
                   <div class="col-sm-4">
                     <div class="icon">
                         <a href="<?php print $front_page; ?>podologia">
-                            <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/bg_podologia2.png" class="img-responsive" />
+                            <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/bg_podologia2.png" alt="podologia" class="img-responsive" />
                             <h4>Podologia</h4>                        
                         </a>
                     </div>
@@ -107,7 +116,7 @@
                     <div class="col-sm-4">
                     <div class="icon">
                         <a href="<?php print $front_page; ?>manicurepedicure">
-                            <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/bg_manicure2.png" class="img-responsive" />
+                            <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/bg_manicure2.png" alt="manicure" class="img-responsive" />
                             <h4>Manicure / Pedicure</h4>    
                         </a>
                     </div>
@@ -115,7 +124,7 @@
                     <div class="col-sm-4">
                     <div class="icon">
                         <a href="<?php print $front_page; ?>depila%C3%A7%C3%A3o">
-                            <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/bg_depilacao2.png" class="img-responsive" />
+                            <img src="<?php print base_path() . path_to_theme() .'/' ?>/img/bg_depilacao2.png" alt="depilacao" class="img-responsive" />
                             <h4>Depilação</h4>                        
                         </a>
                     </div>
@@ -133,7 +142,7 @@
 <!-- / SECTION-1 -->
 
 <!-- SECTION-2 -->
-<section id="Section-2">
+<section id="novidades">
 	<div class="container">
 
     <h2>Novidades</h2>
@@ -156,7 +165,7 @@
  <!-- / SECTION-2 -->
  
  <!-- SECTION-3 -->
-<section id="Section-3">
+<section id="produtos">
 <div class="container">
    <h2>Produtos</h2>
 
@@ -165,12 +174,12 @@
             <!-- Wrapper for slides --> 
             <div class="carousel-inner">
               <div class="item item-1 active">
-                <div class="produto"><img src="<?php print base_path() . path_to_theme() .'/' ?>/img/produto_blueken.jpg" /></div>
-                <div class="produto"><img src="<?php print base_path() . path_to_theme() .'/' ?>/img/produto_revole.jpg" /></div>
-                <div class="produto"><img src="<?php print base_path() . path_to_theme() .'/' ?>/img/produto_somejoy.jpg" /></div>
-                <div class="produto"><img src="<?php print base_path() . path_to_theme() .'/' ?>/img/produto_soreal.jpg" /></div>
-                <div class="produto"><img src="<?php print base_path() . path_to_theme() .'/' ?>/img/produto_wulla.jpg" /></div>
-                <div class="produto"><img src="<?php print base_path() . path_to_theme() .'/' ?>/img/produto_wurlii.jpg" /></div>
+                <div class="produto"><img src="<?php print base_path() . path_to_theme() .'/' ?>/img/produto_blueken.jpg" alt="produto" /></div>
+                <div class="produto"><img src="<?php print base_path() . path_to_theme() .'/' ?>/img/produto_revole.jpg" alt="produto" /></div>
+                <div class="produto"><img src="<?php print base_path() . path_to_theme() .'/' ?>/img/produto_somejoy.jpg" alt="produto" /></div>
+                <div class="produto"><img src="<?php print base_path() . path_to_theme() .'/' ?>/img/produto_soreal.jpg" alt="produto" /></div>
+                <div class="produto"><img src="<?php print base_path() . path_to_theme() .'/' ?>/img/produto_wulla.jpg" alt="produto" /></div>
+                <div class="produto"><img src="<?php print base_path() . path_to_theme() .'/' ?>/img/produto_wurlii.jpg" alt="produto" /></div>
               </div>
             </div> 
 
@@ -185,19 +194,14 @@
 </section> 
  <!-- / SECTION-3 -->
 
- <!-- SECTION-4 -->
-<section id="Section-4">
-  <div class="container">    
+ <section id="fachada">
+<div class="container">
+</div>
+</section>
 
-    
-       
-  </div><!-- / CONTAINER-->
- </section> 
- <!-- / SECTION-4 -->
-
-
+ 
  <!-- SECTION-5 -->
-<section id="Section-5">
+<section id="contato">
   <div class="container">    
 
     <div class="row">
@@ -227,7 +231,7 @@
  <!-- / SECTION-5 -->
 
  <!-- SECTION-6 -->
-<section id="Section-6">
+<section id="mapa">
 
    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.0184373458032!2d-49.26702745275344!3d-25.437647122593088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce468bd71a9c3%3A0xd42dc845c0cb1b6c!2sAv.+Sete+de+Setembro%2C+2775+-+Rebou%C3%A7as%2C+Matriz%2C+Curitiba+-+PR%2C+80230-010!5e0!3m2!1spt-BR!2sbr!4v1420767716553" width="100%" height="400" frameborder="0" style="border:0"></iframe>
 
@@ -279,3 +283,18 @@ jQuery(document).ready(function(){
 <script src="<?php print base_path() . path_to_theme() .'/' ?>/js/jquery.inview.js"></script>
 <script src="<?php print base_path() . path_to_theme() .'/' ?>/js/custom_inview.js"></script>
 <!--<![endif]--> 
+
+
+<script type="text/javascript">
+var janela = $(window).width();
+    if(janela>767){          
+          $(document).scroll(function () {
+              var y = $(this).scrollTop();        
+              if (y > 650) {
+                $('#topnav').addClass('fixed-top');          
+              } else {          
+                $('.navbar').removeClass('fixed-top');          
+              }
+          }); 
+    }
+</script>

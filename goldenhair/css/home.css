@@ -10,10 +10,35 @@
     background: #000 url(../img/bg_topo_home.jpg) top center no-repeat;	
 }
 
+.front header .container{
+	position: relative; 
+	height: 100%;
+}
+
 .front header h1.logo a{float: left;}
 
+.front .telefone{
+	position: absolute;
+	bottom: 50px;
+	left: 50px;
+	padding: 10px 15px;
+	border: 1px solid #d2b55b;
+	color: #fff7d0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;	
+	font-weight: bold;
+}
+
+.front #topnav.fixed-top{	
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 50;
+}
+
 /*--- BLOCO 1 ---------------------------------------------------------------------------------------------*/
-.front #Section-1{	
+.front #servicos{	
 	/*margin: 50px 0 100px 0;*/	
     position: relative;
 }
@@ -76,14 +101,18 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: #000;
-    opacity: .95; 
+    background: #111;
     display: none;
-    transition: .5s;
     text-align: center;
     color: #fff;
     padding: 0 0 100px 0;
+
+    /* -webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+         -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;*/
 }
+
 #servicos-feminino .voltar{
     cursor: pointer;
     margin: 25px 0;
@@ -121,21 +150,21 @@
 
 
 /*--- BLOCO 2 ---------------------------------------------------------------------------------------------*/
-.front #Section-2{
+.front #novidades{
 	background: transparent url(../img/bg_novidades_home.jpg) top center no-repeat;	
 	color: #fff;
 	padding: 50px 0 100px 0;
 }
 
-.front #Section-2 #carousel-novidades .view-noticias-home{	
+.front #novidades #carousel-novidades .view-noticias-home{	
 	overflow: hidden;	
 	margin-top: 50px;
 }
-.front #Section-2 #carousel-novidades .view-noticias-home .item{
+.front #novidades #carousel-novidades .view-noticias-home .item{
 	text-align: center; 
 	overflow: hidden;			
 }
-.front #Section-2 #carousel-novidades .views-field-title a{
+.front #novidades #carousel-novidades .views-field-title a{
 	font-size: 2.85em;
 	color: #fff;	
 	margin-bottom: 25px;
@@ -143,41 +172,41 @@
 	text-transform: uppercase;
 	letter-spacing: -1px;
 }
-.front #Section-2 #carousel-novidades .views-field-field-chamada{
+.front #novidades #carousel-novidades .views-field-field-chamada{
 	width: 100%;
 	margin: 20px 0;
 }
 
-.front #Section-2 #carousel-novidades .views-field-view-node a{
+.front #novidades #carousel-novidades .views-field-view-node a{
 	display: inline-block;
 	padding: 10px 25px;
 	border-radius: 5px;   
 	background: #bd9b31;
 	color: #fff;
 }
-	.front #Section-2 #carousel-novidades .views-field-view-node a:hover{
+	.front #novidades #carousel-novidades .views-field-view-node a:hover{
 		background: #ab881c;
 		text-decoration: none;
 	}
 
-.front #Section-2 #carousel-novidades .carousel-control{
+.front #novidades #carousel-novidades .carousel-control{
 	width: 50px;
 	background: transparent;
 }
  
 /*--- BLOCO 3 ---------------------------------------------------------------------------------------------*/ 
-.front #Section-3{padding-top: 25px;}
+.front #produtos{padding-top: 25px;}
 
-.front #Section-3 #carousel-produtos .produto{	
+.front #produtos #carousel-produtos .produto{	
 	width: 16.66%;
 	float: left;
 	text-align: center;
 } 
-.front #Section-3 #carousel-produtos .carousel-inner{	
+.front #produtos #carousel-produtos .carousel-inner{	
 	float: left;
 	width: 100%;
 }
-.front #Section-3 #carousel-produtos .carousel-indicators{	
+.front #produtos #carousel-produtos .carousel-indicators{	
 	margin-top: 50px;
 	position: relative;
 	float: left;
@@ -186,7 +215,7 @@
 }
 
 /*--- BLOCO 4 ---------------------------------------------------------------------------------------------*/
-.front #Section-4{	
+.front #fachada{	
 	background: transparent url(../img/fachada.jpg) top center no-repeat;
 	/*background-width: 100%;*/
 	min-height: 580px;	
@@ -194,18 +223,18 @@
 
 
 /*--- BLOCO 5 ---------------------------------------------------------------------------------------------*/
-.front #Section-5 {
+.front #contato {
 	color: #f5f5f5;
 	padding: 100px 0;
 }
-.front #Section-5 h2{
+.front #contato h2{
 	font-size: 1.4em;
 	margin-bottom: 25px;
 }
-.front #Section-5 p{text-align: center;}
+.front #contato p{text-align: center;}
 
 /*--- BLOCO 6 ---------------------------------------------------------------------------------------------*/
-.front #Section-6{
+.front #mapa{
 	padding: 0;
 	margin: 0;
 	border-top: 5px solid #d8b45c;

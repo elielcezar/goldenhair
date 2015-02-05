@@ -1,14 +1,13 @@
 (function($) {
 
-   $().ready(function() { 
-       
+   $().ready(function() {        
     
     /*-- servicos home --------------------------------------------------*/    
     $('.icon-para-elas').click(function(){        
-        $('#servicos-feminino').fadeIn('slow'); 
+        $('#servicos-feminino').removeClass('fadeOutLeft').addClass('fadeInLeft').css('display','block');   
     });
     $('.voltar').click(function(){
-        $('.servico-especifico').fadeOut();        
+        $('#servicos-feminino').removeClass('fadeInLeft').addClass('fadeOutLeft');   
     });
 
    	

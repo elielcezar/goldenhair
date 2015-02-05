@@ -19,11 +19,12 @@ a{outline: 0 !important;}
     }
  */   
 
- section {		
+section {		
 	width: 100%;
 	min-width: 100%;	
 	padding-bottom: 25px;
 	margin-bottom: 25px;
+	overflow: hidden;
 }
 
 #principal a{color: #d2b55b;}
@@ -64,6 +65,7 @@ form input[type="password"]{
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
+	color: #111 !important;
 	border: 1px solid #d1d1d1;	
 }
 form input[type="submit"]{	
@@ -271,6 +273,10 @@ header .navbar ul li ul li a:hover{background-color: #000 !important;}*/
 	-o-transition-delay: 1.2s;
 }
 
+/*--- PAGINAS ------------------------------------------------------------------------*/
+.node-type-page #principal .container{max-width: 860px;}
+
+
 /*--- SERVICOS ----------------------------------------------------------------------*/
 /*.node-type-servico #conteudo .pane-node-title{
     float: left;
@@ -289,7 +295,10 @@ header .navbar ul li ul li a:hover{background-color: #000 !important;}*/
 	background: transparent url(../img/bg_titulos.jpg) bottom center no-repeat;
 }
 
-/*--- BLOG -------------------------------------------------------------------------*/
+/*--- NOTICIAS -------------------------------------------------------------------------*/
+
+.node-type-article #principal .container{max-width: 860px;}
+.node-type-article #principal .pane-node-title h1{margin-bottom: 25px;}
 
 /*.page-blog .view-blog .views-row{
 	margin-bottom: 25px;		
