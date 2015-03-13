@@ -5,8 +5,6 @@
     </div>
 	</header>
 <!-- / HEADER -->
-
-
 <nav id="topnav" class="navbar navbar-default" role="navigation">
     <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -18,27 +16,23 @@
       <span class="icon-bar"></span>
     </button>   
     </div> 
-
     <div class="collapse navbar-collapse navbar-ex1-collapse">   
        <div class="menu-secoes">
        <ul id="menu-secoes" class="nav navbar-nav">
-            <li class="active"><a href="#topo">Home</a></li>
-            <li><a data-toggle="pill" href="#missao">O Salão</a></li>
-            <li><a data-toggle="pill" href="#servicos">Serviços</a></li>
-            <li><a data-toggle="pill" href="#novidades">Novidades</a></li> 
-            <li><a data-toggle="pill" href="#produtos">Produtos</a></li>             
-           <li><a href="<?php print $front_page; ?>trabalhe-conosco">Trabalhe Conosco</a></li>             
-            <li><a data-toggle="pill" href="#contato">Contato</a></li> 
-            <li class="facebook"><a href="https://www.facebook.com/pages/Golden-Hair/1440308909590166?fref=ts" target="_blank">Facebook</a></li> 
-            <li class="instagram"><a href="#">Instagram</a></li> 
+            <li class="active"><a href="<?php print $front_page; ?>">Home</a></li>
+            <li><a href="<?php print $front_page; ?>#missao">O Salão</a></li>
+            <li><a href="<?php print $front_page; ?>#servicos">Serviços</a></li>
+            <li><a href="<?php print $front_page; ?>#novidades">Novidades</a></li> 
+            <li><a href="<?php print $front_page; ?>#produtos">Produtos</a></li>             
+            <li><a href="<?php print $front_page; ?>trabalhe-conosco">Trabalhe Conosco</a></li>             
+            <li><a href="<?php print $front_page; ?>#contato">Contato</a></li> 
+            <li class="facebook"><a href="https://www.facebook.com/goldenhairoficial" target="_blank">Facebook</a></li> 
+            <li class="instagram"><a href="http://instagram.com/goldenhairoficial">Instagram</a></li> 
           </ul>  
       </div>
    </div><!-- /.navbar-collapse --> 
-
   </div>  
 </nav>
-
-
 <?php if (($title)&&(!$is_front)): ?>
 		<div class="titulo-pagina">
 			<div class="container">
@@ -48,13 +42,10 @@
           	</div>
       	</div>
      <?php endif; ?>
-
 <section id="principal">
-
 	<div class="container">
 		
 		<div class="row">
-
 			<div id="conteudo" class="col-sm-12">								
 				 <?php if ($messages): ?>
 		          <div id="messages">
@@ -70,7 +61,6 @@
 		          
 		          <?php print render($page['content']); ?>		      	
 	        </div> <!-- conteudo -->
-
 			
 		</div>	   
 	</div><!-- container -->
@@ -90,7 +80,6 @@
 </footer>
 </div>	 
  
-
 <!--/ CONTENT -->
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="<?php print base_path() . path_to_theme() .'/' ?>/js/bootstrap.js" type="text/javascript"></script>
